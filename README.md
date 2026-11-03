@@ -1,12 +1,12 @@
 # Better Dark Mode
 
-Zusätzliche dunkle Flächen für das offizielle [FreeScout Dark Mode](https://freescout.net/module/dark-mode/) Modul. Das hier ist kein Ersatz dafür und enthält seinen Quelltext nicht.
+Extra dark surfaces for the official [FreeScout Dark Mode](https://freescout.net/module/dark-mode/) module. This is an add-on. It does not include that module's source.
 
-Das Stylesheet wird nur geladen, wenn das offizielle Modul aktiv ist und FreeScout die Lizenz als aktiviert führt. Den Lizenzschlüssel liest dieses Add-on nicht aus und schickt ihn auch nicht weg. Ohne aktivierte Lizenz passiert nichts.
+The stylesheet loads only when the official module is active and FreeScout has marked its license as activated. This add-on never reads the license key and never sends it anywhere. With no activated license, it does nothing.
 
 ## Installation
 
-1. Das offizielle Dark-Mode-Modul installieren und die Lizenz aktivieren.
-2. Dieses Modul nach `Modules/BetterDarkMode` legen und aktivieren.
+1. Install the official Dark Mode module and activate its license.
+2. Place this module in `Modules/BetterDarkMode` and activate it.
 
-Die Regeln hängen an der Klasse `dm`, die das offizielle Modul setzt. Sie decken unter anderem Tabellen, Akkordeons, die Kundenliste, Select2, Modale wie „Ordner hinzufügen“ und den Workflow-Packs-Graph ab.
+The rules hang off the `dm` class, which the official module sets. They cover tables, accordions, the customer list, Select2, modals such as "Add folder", and the Workflow Packs graph.
