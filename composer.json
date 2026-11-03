@@ -1,0 +1,23 @@
+{
+    "name": "neptuned/better-dark-mode",
+    "description": "Extra dark surfaces for the official FreeScout Dark Mode module.",
+    "authors": [
+        {
+            "name": "NeptunedGmbH",
+            "homepage": "https://github.com/NeptunedGmbH"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\BetterDarkMode\\Providers\\BetterDarkModeServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\BetterDarkMode\\": ""
+        }
+    }
+}

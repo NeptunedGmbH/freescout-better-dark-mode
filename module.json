@@ -1,0 +1,22 @@
+{
+    "name": "Better Dark Mode",
+    "alias": "betterdarkmode",
+    "description": "Extra dark surfaces for the official FreeScout Dark Mode module. Does nothing without that module and an activated license.",
+    "version": "1.0.0",
+    "detailsUrl": "https://github.com/NeptunedGmbH/freescout-better-dark-mode",
+    "author": "NeptunedGmbH",
+    "authorUrl": "https://github.com/NeptunedGmbH",
+    "requiredAppVersion": "1.8.24",
+    "license": "MIT",
+    "keywords": ["dark mode"],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\BetterDarkMode\\Providers\\BetterDarkModeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": ["darkmode"]
+}

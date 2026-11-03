@@ -1,0 +1,661 @@
+/* Better Dark Mode. Extra rules for the official FreeScout Dark Mode module. */
+/*
+ * Contrast and shared surfaces.
+ * Headings, striped tables and info alerts stay on the light FreeScout
+ * palette because nothing above targets them. Official modules that paint
+ * their own light bars (Kanban swimlanes, Reports header) are covered here
+ * too, under .dm, so they follow the same palette.
+ */
+.dm h1, .dm h2, .dm h3, .dm h4, .dm h5, .dm h6,
+.dm .heading,
+.dm .subheading,
+.dm .main-heading,
+.dm .section-heading,
+.dm .section-heading-noborder,
+.dm .panel-default > .panel-heading {
+    color: #f2f2f2;
+}
+.dm .main-heading,
+.dm .section-heading,
+.dm .panel-default > .panel-heading {
+    background-color: #1a1a1a;
+    border-color: #2e2e2e;
+}
+.dm h1 a, .dm h2 a, .dm h3 a, .dm h4 a, .dm h5 a, .dm h6 a,
+.dm .heading a,
+.dm .main-heading a,
+.dm .section-heading a,
+.dm .panel-default > .panel-heading a,
+.dm .conv-sidebar-block .accordion .panel-title a {
+    color: #f2f2f2;
+}
+.dm h1 a:hover, .dm h2 a:hover, .dm h3 a:hover, .dm h4 a:hover,
+.dm .main-heading a:hover,
+.dm .section-heading a:hover,
+.dm .panel-default > .panel-heading a:hover {
+    color: #ffffff;
+}
+.dm .conv-new #conv-toolbar h2,
+.dm .conv-new .conv-info {
+    color: #f2f2f2;
+}
+
+.dm a,
+.dm .btn-link,
+.dm .customer-contacts .contact-main {
+    color: #b9d4ff;
+}
+.dm a:hover,
+.dm a:focus,
+.dm .btn-link:hover,
+.dm .btn-link:focus {
+    color: #e7f1ff;
+}
+
+.dm .text-muted,
+.dm .text-help,
+.dm .form-help,
+.dm .help-block,
+.dm small {
+    color: #c8cdd3;
+}
+.dm .link-black,
+.dm .link-black:hover,
+.dm .link-black:focus {
+    color: #f2f2f2 !important;
+}
+.dm .sidebar-menu > li > a,
+.dm .sidebar-menu .glyphicon,
+.dm .table-conversations th a,
+.dm .table-conversations th a:hover,
+.dm .table-conversations th a:focus,
+.dm .table-conversations th span,
+.dm .note-editor .btn-default,
+.dm #conversations-bulk-actions .btn-default {
+    color: #c8c8c8;
+}
+.dm .sidebar-menu > li > a:hover,
+.dm .sidebar-menu > li > a:hover .glyphicon {
+    color: #f2f2f2;
+}
+.dm .form-control,
+.dm input[type="text"],
+.dm input[type="email"],
+.dm input[type="password"],
+.dm input[type="search"],
+.dm textarea {
+    color: #f2f2f2;
+}
+.dm .form-control::placeholder,
+.dm input::placeholder,
+.dm textarea::placeholder {
+    color: #b7b7b7;
+}
+
+.dm .table > thead > tr > th,
+.dm .table > tbody > tr > th,
+.dm .table > tbody > tr > td {
+    border-color: #333333;
+}
+.dm .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #1a1a1a;
+}
+.dm .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #212121;
+}
+.dm .table-hover > tbody > tr:hover {
+    background-color: #2a2a2a;
+}
+.dm .alert-info {
+    color: #d6e6ff;
+    background-color: #1a2832;
+    border-color: #2a4a5c;
+}
+.dm .alert-warning {
+    color: #ffe0a8;
+    background-color: #2a2418;
+    border-color: #5c4a28;
+}
+.dm .pagination > li > a,
+.dm .pagination > li > span {
+    background-color: #1a1a1a;
+    border-color: #333333;
+    color: #f2f2f2;
+}
+.dm .pagination > li > a:hover,
+.dm .pagination > li > span:hover,
+.dm .pagination > li > a:focus,
+.dm .pagination > li > span:focus {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+.dm .pagination > .active > a,
+.dm .pagination > .active > span,
+.dm .pagination > .active > a:hover,
+.dm .pagination > .active > span:hover {
+    background-color: #3a78c2;
+    border-color: #1a3959;
+    color: #ffffff;
+}
+.dm .pagination > .disabled > span,
+.dm .pagination > .disabled > a,
+.dm .pagination > .disabled > a:hover {
+    background-color: #191919;
+    border-color: #333333;
+    color: #8d8d8d;
+}
+
+/* Kanban (official module) keeps light swimlanes, cards and counters. */
+.dm .kn-swimlane {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+}
+.dm .kn-col-name {
+    color: #f2f2f2;
+}
+.dm .kn-card {
+    background-color: #1a1a1a;
+    border-color: #3a3a3a;
+    color: #e6e6e6;
+    box-shadow: none;
+}
+.dm .kn-card-name {
+    color: #f2f2f2;
+}
+.dm .kn-card-customer,
+.dm .kn-card-preview,
+.dm .kn-card .glyphicon,
+.dm .kn-card-date,
+.dm .kn-col-counter {
+    color: #c8cdd3;
+}
+.dm .kn-card-active {
+    background-color: #243044;
+}
+.dm .kn-card-footer {
+    border-top-color: #333333;
+}
+.dm .kn-conv-counter {
+    background: #212121;
+    border-color: #3a3a3a;
+    color: #c8cdd3;
+}
+.dm .kn-disabled-option {
+    background-color: #2a2a2a;
+    color: #c8cdd3;
+}
+.dm .kn-more {
+    border-color: #3a3a3a;
+    color: #c8cdd3;
+}
+
+/* Reports header uses the same light-blue bar as .main-heading. */
+.dm .rpt-header {
+    background-color: #1a1a1a;
+}
+.dm .rpt-title {
+    color: #f2f2f2;
+}
+
+/* Installed-module cards are white or mint (#deffde) in the core stylesheet. */
+.dm .module-card {
+    background-color: #1e1e1e;
+    border-color: #3a3a3a;
+    box-shadow: none;
+    color: #e6e6e6;
+}
+.dm .module-card.active {
+    background-color: #1a2e1a;
+    border-color: #2f5a32;
+}
+.dm .module-card.not-installed {
+    background-color: #191919;
+    border-color: #333333;
+}
+.dm .module-card h4,
+.dm .module-card h4 a {
+    color: #f2f2f2;
+}
+.dm .module-details {
+    color: #c8cdd3;
+}
+
+/* Success alerts use the same mint as active module cards. */
+.dm .alert-success {
+    color: #c8ecc8;
+    background-color: #1a2e1a;
+    border-color: #2f5a32;
+}
+
+/*
+ * App logs use DataTables, which paints every row white and then
+ * paints the sorted column an even lighter white. Those rules are
+ * more specific than .table-striped.
+ */
+.dm table.dataTable tbody tr,
+.dm table.dataTable.stripe tbody tr.odd,
+.dm table.dataTable.display tbody tr.odd,
+.dm table.dataTable.display tbody tr.even,
+.dm table.dataTable.hover tbody tr:hover,
+.dm table.dataTable.display tbody tr:hover {
+    background-color: #212121;
+    color: #e6e6e6;
+}
+.dm table.dataTable.stripe tbody tr.odd,
+.dm table.dataTable.display tbody tr.odd {
+    background-color: #1a1a1a;
+}
+.dm table.dataTable.hover tbody tr:hover,
+.dm table.dataTable.display tbody tr:hover,
+.dm table.dataTable.display tbody tr:hover > .sorting_1,
+.dm table.dataTable.display tbody tr:hover > .sorting_2,
+.dm table.dataTable.display tbody tr:hover > .sorting_3,
+.dm table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
+.dm table.dataTable.order-column.hover tbody tr:hover > .sorting_2,
+.dm table.dataTable.order-column.hover tbody tr:hover > .sorting_3 {
+    background-color: #2a2a2a;
+}
+.dm table.dataTable tbody th,
+.dm table.dataTable tbody td,
+.dm table.dataTable thead th,
+.dm table.dataTable thead td {
+    color: #e6e6e6;
+    border-color: #333333;
+}
+.dm table.dataTable.display tbody tr.odd > .sorting_1,
+.dm table.dataTable.display tbody tr.odd > .sorting_2,
+.dm table.dataTable.display tbody tr.odd > .sorting_3,
+.dm table.dataTable.order-column tbody tr.odd > .sorting_1,
+.dm table.dataTable.order-column tbody tr.odd > .sorting_2,
+.dm table.dataTable.order-column tbody tr.odd > .sorting_3,
+.dm table.dataTable.order-column.stripe tbody tr.odd > .sorting_1,
+.dm table.dataTable.order-column.stripe tbody tr.odd > .sorting_2,
+.dm table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+    background-color: #1a1a1a;
+}
+.dm table.dataTable.display tbody tr.even > .sorting_1,
+.dm table.dataTable.display tbody tr.even > .sorting_2,
+.dm table.dataTable.display tbody tr.even > .sorting_3,
+.dm table.dataTable.order-column tbody tr > .sorting_1,
+.dm table.dataTable.order-column tbody tr > .sorting_2,
+.dm table.dataTable.order-column tbody tr > .sorting_3,
+.dm table.dataTable.order-column.stripe tbody tr.even > .sorting_1,
+.dm table.dataTable.order-column.stripe tbody tr.even > .sorting_2,
+.dm table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+    background-color: #212121;
+}
+.dm table.dataTable thead th {
+    border-bottom-color: #444444;
+}
+.dm #laravel-logs .list-group-item {
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+    border-color: #333333;
+}
+.dm #laravel-logs a.llv-active {
+    background-color: #243044;
+    border-color: #3a78c2;
+    color: #f2f2f2;
+}
+.dm .dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #e6e6e6 !important;
+    background: transparent;
+    border-color: transparent;
+}
+.dm .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dm .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #f2f2f2 !important;
+    background: #2a2a2a;
+    border-color: #555555;
+}
+.dm .dataTables_wrapper .dataTables_info,
+.dm .dataTables_wrapper .dataTables_length,
+.dm .dataTables_wrapper .dataTables_filter {
+    color: #c8cdd3;
+}
+
+/* UpdateGuard badges, counters and the log panel are light by default. */
+.dm .ug-ok { color: #c8ecc8; background: #1a2e1a; border-color: #2f5a32; }
+.dm .ug-warn { color: #ffe0a8; background: #2a2418; border-color: #5c4a28; }
+.dm .ug-fail { color: #ffc1c1; background: #2a1616; border-color: #5c2a2a; }
+.dm .ug-info { color: #d6e6ff; background: #1a2832; border-color: #2a4a5c; }
+.dm .ug-muted { color: #c8cdd3; background: #2a2a2a; border-color: #444444; }
+.dm .ug-stats,
+.dm .ug-log {
+    background-color: #1a1a1a;
+    border-color: #333333;
+    color: #e6e6e6;
+}
+.dm .ug-stat { border-right-color: #333333; }
+.dm .ug-stat-label,
+.dm .ug-log-time,
+.dm .ug-level-debug { color: #c8cdd3; }
+.dm .ug-log-line,
+.dm .ug-unknown-list li,
+.dm .ug-settings fieldset > h4 { border-color: #333333; }
+.dm .ug-save { background: #1a1a1a; border-top-color: #333333; }
+.dm .ug-level-error .ug-log-level,
+.dm .ug-level-critical .ug-log-level { color: #ffb4b4; }
+.dm .ug-level-warning .ug-log-level { color: #ffe0a8; }
+.dm .ug-refresh {
+    --ug-surface: #1a1a1a;
+    --ug-border: #333333;
+    --ug-text-muted: #c8cdd3;
+}
+
+.dm .note-editor .note-editable h1,
+.dm .note-editor .note-editable h2,
+.dm .note-editor .note-editable h3,
+.dm .note-editor .note-editable h4,
+.dm .note-editor .note-editable h5,
+.dm .note-editor .note-editable h6,
+.dm .note-editor .note-editable p,
+.dm .note-editor .note-editable div,
+.dm .note-editor .note-editable li,
+.dm .note-editor .note-editable span,
+.dm .note-editor .note-editable small,
+.dm #editor_signature,
+.dm #editor_signature p,
+.dm #editor_signature div,
+.dm #editor_signature span,
+.dm #editor_signature small {
+    color: #1c1c1c;
+}
+.dm .note-editor .note-editable a,
+.dm #editor_signature a {
+    color: #0b57b8;
+}
+.dm .note-editor .note-placeholder {
+    color: #5c6570;
+}
+/*
+ * Accordion rows (Workflows, Custom Folders, Saved Replies).
+ * Core CSS paints .accordion > .panel-default > .panel-heading:hover as #f4f5f5,
+ * which is more specific than the dark heading background, so the row turns
+ * white while its label stays light.
+ */
+.dm .accordion > .panel-default > .panel-heading,
+.dm .accordion-disabled > .panel-default > .panel-heading,
+.dm .accordion-disabled > .panel-default > .panel-heading:hover,
+.dm .panel.panel-sortable {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+}
+.dm .accordion > .panel-default > .panel-heading:hover,
+.dm .accordion > .panel-default > .panel-heading:focus-within {
+    background-color: #2c2c2c;
+}
+.dm .accordion .panel-title > a,
+.dm .accordion .panel-title > a:hover,
+.dm .accordion .panel-title > a:focus,
+.dm .accordion-disabled .panel-title > div {
+    color: #f2f2f2;
+}
+.dm .panel-sortable .handle,
+.dm .panel-sortable .handle .glyphicon {
+    color: #a8a8a8;
+}
+.dm .sortable-placeholder {
+    background-color: #242424;
+    border-color: #3a3a3a;
+}
+
+
+/*
+ * More light hovers that beat the generic dark backgrounds.
+ * Customer list, pager, list groups, tabs, editor buttons,
+ * checklist rows, saved-reply search and Select2 chips.
+ */
+.dm .customers-list {
+    background-color: #212121;
+}
+.dm .customers-list-head {
+    border-bottom-color: #2e2e2e;
+    color: #a8a8a8;
+}
+.dm .customers-list-row,
+.dm .customers-list-row:hover,
+.dm .customers-list-row:focus {
+    background-color: #212121;
+    color: #f2f2f2;
+    border-top-color: #2e2e2e;
+}
+.dm .customers-list-row:nth-of-type(odd) {
+    background-color: #1a1a1a;
+}
+.dm .customers-list-row:hover,
+.dm .customers-list-row:focus {
+    background-color: #2c2c2c;
+}
+.dm .customers-list-row .customers-list-cell {
+    color: #c8cdd3;
+}
+.dm .customers-list-row .customers-list-col-name {
+    color: #f2f2f2;
+}
+
+.dm .pager li > a,
+.dm .pager li > span {
+    background-color: #1a1a1a;
+    border-color: #333333;
+    color: #f2f2f2;
+}
+.dm .pager li > a:hover,
+.dm .pager li > a:focus {
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+.dm .pager .disabled > a,
+.dm .pager .disabled > a:hover,
+.dm .pager .disabled > a:focus,
+.dm .pager .disabled > span {
+    background-color: #191919;
+    border-color: #333333;
+    color: #8d8d8d;
+}
+
+.dm .list-group-item:not(.active) {
+    background-color: #1a1a1a;
+    border-color: #333333;
+    color: #e6e6e6;
+}
+.dm a.list-group-item:hover:not(.active),
+.dm a.list-group-item:focus:not(.active),
+.dm button.list-group-item:hover:not(.active),
+.dm button.list-group-item:focus:not(.active) {
+    background-color: #2c2c2c;
+    color: #f2f2f2;
+}
+
+.dm .nav > li > a:hover,
+.dm .nav > li > a:focus {
+    background-color: #212121;
+    color: #f2f2f2;
+}
+.dm .nav-tabs > li > a:hover,
+.dm .nav-tabs > li > a:focus {
+    background-color: #212121;
+    color: #f2f2f2;
+    border-color: #2e2e2e;
+}
+.dm .navbar-default .navbar-nav > li > a:hover,
+.dm .navbar-default .navbar-nav > li > a:focus {
+    background-color: #212121;
+    color: #f2f2f2;
+}
+
+.dm .note-editor .btn-default:hover,
+.dm .note-editor .btn-default:focus,
+.dm .note-editor .btn-default.active {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+    border-color: #444444;
+}
+.dm .sidebar-menu-toggle:hover,
+.dm .sidebar-menu-toggle:focus {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+}
+.dm .web-notification.is-unread a:hover,
+.dm .web-notification.is-unread a:focus {
+    background-color: #243044;
+    color: #f2f2f2;
+}
+
+.dm .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #2a2a2a;
+    border-color: #444444;
+    color: #f2f2f2;
+}
+.dm .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #c8cdd3;
+}
+.dm .select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+}
+.dm .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #3a78c2;
+    color: #ffffff;
+}
+
+.dm .table-conversations .conv-thread-count span {
+    background-color: #2a2a2a;
+    border-color: #444444;
+    color: #c8cdd3;
+}
+
+.dm .cl-item {
+    border-bottom-color: #2e2e2e;
+}
+.dm .cl-item:hover {
+    background-color: #2c2c2c;
+}
+
+.dm .sr-li-search:hover {
+    background-color: #191919 !important;
+}
+
+.dm #kb-article-delete:hover {
+    background-color: #2c2c2c;
+}
+
+.dm .secrets-btn {
+    background-color: #212121;
+    border-color: #444444;
+    color: #f2f2f2;
+}
+.dm .secrets-btn:hover {
+    background-color: #2c2c2c;
+    border-color: #555555;
+    color: #ffffff;
+}
+.dm .secrets-btn-primary,
+.dm .secrets-btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+
+/*
+ * Workflow Packs graph. Cards, stage, inspector and dialogs follow
+ * --g-* on .wpg-app. Node colours stay. A few surfaces are hardcoded light.
+ */
+.dm .wpg-app {
+    --g-bg: #212121;
+    --g-card: #1a1a1a;
+    --g-border: #2e2e2e;
+    --g-text: #f2f2f2;
+    --g-muted: #a8a8a8;
+}
+.dm .wpg-grid-line {
+    stroke: #3a3a3a;
+}
+.dm .wpg-focus {
+    background: #243044;
+    color: #d6e6ff;
+}
+.dm .wpg-warn-text {
+    color: #ffe0a8;
+    background: #2a2418;
+    border-color: #5c4a28;
+}
+.dm .wpg-minimap {
+    background: rgba(26, 26, 26, .92);
+}
+.dm .wpg-legend {
+    background: rgba(26, 26, 26, .92);
+}
+.dm .wpg-switch span {
+    background: #3a3a3a;
+}
+.dm .wpg-menu-item:hover,
+.dm .wpg-menu-item:focus {
+    background: rgba(99, 102, 241, .22);
+}
+.dm .wpg-select {
+    color: #f2f2f2;
+}
+.dm .wpg-box {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .45));
+}
+
+
+/*
+ * Folder dialogs and other modals. The header rule and <hr> stay #eee,
+ * and fields use the same fill as the dialog, so the form looks flat.
+ */
+.dm .modal-header,
+.dm .modal-footer {
+    border-color: #2e2e2e;
+}
+.dm .modal-title,
+.dm .modal .close {
+    color: #f2f2f2;
+}
+.dm .modal .close:hover,
+.dm .modal .close:focus {
+    color: #ffffff;
+    opacity: 1;
+}
+.dm .modal-backdrop {
+    background-color: #000000;
+}
+.dm hr {
+    border-top-color: #2e2e2e;
+}
+.dm .modal .control-label,
+.dm .modal label,
+.dm .modal .checkbox,
+.dm .modal .radio,
+.dm .modal .form-help,
+.dm .modal .help-block {
+    color: #c8cdd3;
+}
+.dm .modal .form-control,
+.dm .modal select.form-control {
+    background-color: #141414;
+    border-color: #3a3a3a;
+    color: #f2f2f2;
+}
+.dm .modal .select2-container--default .select2-selection--single,
+.dm .modal .select2-container--default .select2-selection--multiple {
+    background-color: #141414;
+    border-color: #3a3a3a;
+    color: #f2f2f2;
+}
+.dm .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #f2f2f2;
+}
+.dm .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.dm .select2-container--default .select2-selection--multiple .select2-selection__placeholder {
+    color: #8d8d8d;
+}
+.dm .select2-results__option {
+    color: #f2f2f2;
+}
+.dm .modal .checkbox input,
+.dm .modal .radio input {
+    accent-color: #3a78c2;
+}
