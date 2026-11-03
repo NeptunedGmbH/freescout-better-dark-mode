@@ -6,6 +6,7 @@
     "detailsUrl": "https://github.com/NeptunedGmbH/freescout-better-dark-mode",
     "author": "NeptunedGmbH",
     "authorUrl": "https://github.com/NeptunedGmbH",
+    "img": "/modules/betterdarkmode/img/module.png",
     "requiredAppVersion": "1.8.24",
     "license": "MIT",
     "keywords": ["dark mode"],
