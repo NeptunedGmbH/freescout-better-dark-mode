@@ -1,0 +1,28 @@
+name: Release Module ZIP
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build module zip and checksum
+        run: |
+          MODULE=BetterDarkMode
+          rsync -a --exclude .git ./ "/tmp/${MODULE}/"
+          cd /tmp && zip -r "${MODULE}.zip" "${MODULE}"
+          ( cd /tmp && sha256sum "${MODULE}.zip" ) > /tmp/SHA256SUMS
+          grep -Eq '^[a-f0-9]{64}  '"${MODULE}"'\.zip$' /tmp/SHA256SUMS
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            /tmp/BetterDarkMode.zip
+            /tmp/SHA256SUMS

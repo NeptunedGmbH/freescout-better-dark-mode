@@ -11,6 +11,13 @@ class BetterDarkModeServiceProvider extends ServiceProvider
      */
     const OFFICIAL_ALIAS = 'darkmode';
 
+    public function register()
+    {
+        $this->commands([
+            \Modules\BetterDarkMode\Console\HealthCommand::class,
+        ]);
+    }
+
     public function boot()
     {
         \Eventy::addFilter('stylesheets', function ($styles) {
