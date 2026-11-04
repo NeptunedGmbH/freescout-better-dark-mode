@@ -116,6 +116,16 @@
     background-color: #2a2418;
     border-color: #5c4a28;
 }
+.dm .alert-danger {
+    color: #f2c6d0;
+    background-color: #2a1616;
+    border-color: #5c2a2a;
+}
+.dm .alert-danger a,
+.dm .alert-danger a:hover,
+.dm .alert-danger a:focus {
+    color: #f2c6d0;
+}
 .dm .pagination > li > a,
 .dm .pagination > li > span {
     background-color: #1a1a1a;
