@@ -2,7 +2,7 @@
     "name": "Better Dark Mode",
     "alias": "betterdarkmode",
     "description": "Extra dark surfaces for the official FreeScout Dark Mode module. Does nothing without that module and an activated license.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "detailsUrl": "https://github.com/NeptunedGmbH/freescout-better-dark-mode",
     "latestVersionUrl": "https://raw.githubusercontent.com/NeptunedGmbH/freescout-better-dark-mode/refs/heads/main/version.txt",
     "latestVersionZipUrl": "https://github.com/NeptunedGmbH/freescout-better-dark-mode/releases/latest/download/BetterDarkMode.zip",
